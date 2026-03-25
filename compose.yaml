@@ -1,0 +1,34 @@
+# add logging and health check
+#services:
+#  db:
+#    image: postgres:18
+#    environment:
+#      - POSTGRES_DB=temp
+#      - POSTGRES_USER=123
+#      - POSTGRES_PASSWORD=123
+#    volumes:
+#      - temp_db:/var/lib/postgresql
+#    networks:
+#      - default
+#    ports:
+#      - "5432:5432"
+#
+#
+#volumes:
+#  temp_db:
+
+services:
+  backend:
+    image: temp-backend:local
+    container_name: temp-backend
+#    environment:
+#      - SPRING_PROFILES_ACTIVE=prod
+    expose:
+      - 8080
+    networks:
+      - caddy-network
+
+networks:
+  caddy-network:
+    name: caddy-network
+    external: true
