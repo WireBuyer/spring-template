@@ -4,7 +4,7 @@ services:
       - 5432
 
   backend:
-    image: osakasfavortiedev/testdep-backend:latest
+    image: osakasfavoritedev/testdep-backend:latest
     container_name: testdep-backend
     environment:
       - SPRING_PROFILES_ACTIVE=prod
