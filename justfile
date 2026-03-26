@@ -31,7 +31,7 @@ build-backend:
 
 # Creates an image for the backend without pushing
 local-backend:
-    mvn -Plocal -DskipTests clean jib:dockerBuild
+    mvn -Plocal -DskipTests clean compile jib:dockerBuild
 
 # Build for both the frontend and backend 
 build-both: build-frontend build-backend

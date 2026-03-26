@@ -1,5 +1,7 @@
 spring:
   datasource:
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
     url: jdbc:postgresql://localhost:5432/temp
 
 variable: "abc"

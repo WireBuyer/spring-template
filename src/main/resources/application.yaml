@@ -1,7 +1,7 @@
 spring:
-  datasource:
-    username: 123
-    password: 123
+#  datasource:
+#    username: ${DB_USERNAME}
+#    password: ${DB_PASSWORD}
   jpa:
     hibernate:
       ddl-auto: update
@@ -9,5 +9,5 @@ spring:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
 
-  config:
-    import: optional:file:.env[.properties]
+  # config:
+  #   import: optional:file:.env[.properties]
