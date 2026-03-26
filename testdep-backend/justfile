@@ -13,7 +13,7 @@ dev:
 
 # Pull latest and start prod containers
 prod:
-    # docker compose -f compose.yaml -f compose.prod.yaml pull
+    docker compose -f compose.yaml -f compose.prod.yaml pull
     docker compose -f compose.yaml -f compose.prod.yaml up -d
 
 # Build the frontend for arm64 and amd64 then push both  
