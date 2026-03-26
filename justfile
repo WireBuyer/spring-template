@@ -36,3 +36,7 @@ local-backend:
 # Build for both the frontend and backend 
 build-both: build-frontend build-backend
     echo "Building and pushing both"
+
+# Shut down and remove volumes
+down:
+    docker compose -f compose.yaml -f compose.prod.yaml down -v

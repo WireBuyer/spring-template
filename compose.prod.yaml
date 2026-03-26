@@ -1,7 +1,7 @@
 services:
-   db:
-     expose:
-       - 5432
+  db:
+    expose:
+      - 5432
 
   backend:
     image: testdep-backend:local
