@@ -1,5 +1,5 @@
 user := "osakasfavoritedev"
-project := "temp"
+project := "testdep"
 
 git_hash := `git rev-parse --short HEAD`
 
